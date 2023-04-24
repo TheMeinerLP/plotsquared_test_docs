@@ -1,0 +1,1560 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://themeinerlp.github.io/plotsquared_test_docs/plot-flags/">
+      
+      
+        <link rel="prev" href="../plot-components/">
+      
+      
+        <link rel="next" href="../schematic-generation/">
+      
+      <link rel="icon" href="../assets/images/icon.svg">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
+    
+    
+      
+        <title>Plot flags - Plotsquared Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#plot-flags" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Plotsquared Docs" class="md-header__button md-logo" aria-label="Plotsquared Docs" data-md-component="logo">
+      
+  <img src="../assets/images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Plotsquared Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Plot flags
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+            
+              <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TheMeinerLP/plotsquared_test_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheMeinerLP/plotsquared_test_docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Plotsquared Docs" class="md-nav__button md-logo" aria-label="Plotsquared Docs" data-md-component="logo">
+      
+  <img src="../assets/images/icon.svg" alt="logo">
+
+    </a>
+    Plotsquared Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TheMeinerLP/plotsquared_test_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheMeinerLP/plotsquared_test_docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        PlotSquared Documentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bypass-permissions/" class="md-nav__link">
+        Bypass Permissions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commands/" class="md-nav__link">
+        Commands
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../permission-packs/" class="md-nav__link">
+        Permission Packs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../placeholders/" class="md-nav__link">
+        Placeholders
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plot-backups/" class="md-nav__link">
+        Plot Backups
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plot-component-presets/" class="md-nav__link">
+        Plot component presets
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plot-components/" class="md-nav__link">
+        Plot components
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Plot flags
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Plot flags
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-plot-and-road-flags" class="md-nav__link">
+    Default Plot and Road Flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-categories" class="md-nav__link">
+    Entity Categories
+  </a>
+  
+    <nav class="md-nav" aria-label="Entity Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocktypelist" class="md-nav__link">
+    BlockTypeList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    Boolean
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#double" class="md-nav__link">
+    Double
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enum" class="md-nav__link">
+    Enum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integer" class="md-nav__link">
+    Integer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal" class="md-nav__link">
+    Internal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    Miscellaneous
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    String
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timed" class="md-nav__link">
+    Timed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schematic-generation/" class="md-nav__link">
+        Schematic generation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../single-plot-area/" class="md-nav__link">
+        Single Plot Area
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../why-should-you-switch-to-plotsquared/" class="md-nav__link">
+        Why should you switch to PlotSquared?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          Api
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Api
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/api-documentation/" class="md-nav__link">
+        API Documentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/api-flag-documentation/" class="md-nav__link">
+        API Flag Documentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/event-api/" class="md-nav__link">
+        Event API
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+          Files
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
+          Files
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/settings.yml/" class="md-nav__link">
+        settings.yml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/storage.yml/" class="md-nav__link">
+        storage.yml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/worlds.yml/" class="md-nav__link">
+        worlds.yml
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+          Setup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Setup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/migrating-from-an-older-major-release/" class="md-nav__link">
+        Migrating from an older major release
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/updating-from-1.12-to-1.13/" class="md-nav__link">
+        Updating from 1.12 to 1.13
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#default-plot-and-road-flags" class="md-nav__link">
+    Default Plot and Road Flags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-categories" class="md-nav__link">
+    Entity Categories
+  </a>
+  
+    <nav class="md-nav" aria-label="Entity Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blocktypelist" class="md-nav__link">
+    BlockTypeList
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean" class="md-nav__link">
+    Boolean
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#double" class="md-nav__link">
+    Double
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enum" class="md-nav__link">
+    Enum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integer" class="md-nav__link">
+    Integer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#internal" class="md-nav__link">
+    Internal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#miscellaneous" class="md-nav__link">
+    Miscellaneous
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string" class="md-nav__link">
+    String
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timed" class="md-nav__link">
+    Timed
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="plot-flags">Plot flags</h1>
+<h3 id="introduction">Introduction</h3>
+<p>The extensive flagging system allows you to do all sorts of things such as setting the plot weather.</p>
+<p>Setting a flag is easy, just use <code>/plot flag set &lt;flag&gt; &lt;value&gt;</code>. For a boolean flag, the value would either be 'true' or 'false'.</p>
+<h3 id="default-plot-and-road-flags">Default Plot and Road Flags</h3>
+<p>You can set default flags per world in the <code>plugins/PlotSquared/config/worlds.yml</code>. Default flags will be present in each claimed plot unless a different value is manually set for that plot.</p>
+<p>The following is an <strong>example</strong> of setting the <code>use</code> flag to allow interaction with doors, and trapdoors, levers, gates, pressure plates, buttons and trip wires:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>worlds:
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  &lt;world&gt;:
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    [...]
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    flags:
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>      use: &quot;oak_door,iron_trapdoor,lever,acacia_fence_gate,light_weighted_pressure_plate,oak_button,tripwire&quot;
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>      pvp: true
+</span></code></pre></div>
+<p><em>`\<world>` indicates the name of that plotworld.</em></p>
+<p>The same works for road flags.</p>
+<p><strong>Example:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>worlds:
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  &lt;world&gt;:
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    [...]
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    road:
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>      [...]
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>      flags:
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>        use: &quot;oak_door,iron_trapdoor,lever,acacia_fence_gate,light_weighted_pressure_plate,oak_button,tripwire&quot;
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        pvp: true
+</span></code></pre></div>
+<p><em>`\<world>` indicates the name of that plotworld.</em></p>
+<h3 id="entity-categories">Entity Categories</h3>
+<p>Flags such as mob caps, interaction flags, etc, make use of entity categories. PlotSquared divides entities in the following categories:</p>
+<ul>
+<li><strong>animal:</strong> cod donkey squid skeleton_horse mule trader_llama parrot zombie_horse cow horse bee polar_bear pufferfish cat bat salmon fox pig llama iron_golem turtle tropical_fish sheep snow_golem mooshroom ocelot dolphin chicken wolf panda rabbit</li>
+<li><strong>hostile:</strong> blaze pillager skeleton giant elder_guardian zombie_pigman end_crystal ravager ghast guardian vindicator magma_cube spider creeper wither evoker slime illusioner phantom witch wither_skeleton husk ender_dragon cave_spider stray enderman silverfish endermite vex zombie drowned zombie_villager, shulker</li>
+<li><strong>player:</strong> player</li>
+<li><strong>projectile:</strong> ender_pearl dragon_fireball fireball wither_skull llama_spit fishing_bobber experience_bottle egg arrow small_fireball</li>
+<li><strong>vehicle:</strong> spawner_minecart donkey pig llama furnace_minecart skeleton_horse mule hopper_minecart trader_llama zombie_horse tnt_minecart boat chest_minecart horse command_block_minecart minecart</li>
+<li><strong>villager:</strong> villager wandering_trader snowball spectral_arrow shulker_bullet potion trident</li>
+<li><strong>hanging:</strong> item_frame leash_knot painting</li>
+<li><strong>other:</strong> dragon_fireball tnt experience_orb lightning_bolt fireball wither_skull area_effect_cloud evoker_fangs eye_of_ender armor_stand small_fireball firework_rocket falling_block item</li>
+<li><strong>tamable:</strong> cat trader_llama parrot zombie_horse donkey wolf llama horse skeleton_horse mule</li>
+</ul>
+<h4 id="blocktypelist">BlockTypeList</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>break</td>
+<td>Define a list of materials players should be able to break in the plot even when they aren’t added to the plot.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>place</td>
+<td>Define a list of materials players should be able to place in the plot even when they aren’t added to the plot.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>use</td>
+<td>Define a list of materials players should be able to interact with in the plot even when they aren’t added to the plot.</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h4 id="boolean">Boolean</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>animal-attack</td>
+<td>Set to <code>true</code> to allow animals to be attacked in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>animal-interact</td>
+<td>Set to <code>true</code> to allow animals to be interacted with in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>beacon-effects</td>
+<td>Set to <code>false</code> to disable beacon effects on the plot.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>block-burn</td>
+<td>Set to <code>true</code> to allow blocks to burn within the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>block-ignition</td>
+<td>Set to <code>false</code> to disallow blocks to ignite within the plot.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>chat</td>
+<td>Set to <code>false</code> to prevent plot chat on the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>coral-dry</td>
+<td>Set to <code>true</code> to allow corals to dry within the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>crop-grow</td>
+<td>Set to <code>false</code> to disable crop growing on the plot.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>copper-oxide</td>
+<td>Set to <code>true</code> to allow copper to oxide within the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>deny-exit</td>
+<td>Set to <code>true</code> to disallow players from exiting the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>deny-portal-travel</td>
+<td>Prevents players from travelling across dimensions by using portals.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>deny-portals</td>
+<td>Prevents players from creating portals of any kind.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>device-interact</td>
+<td>Set to <code>true</code> to allow devices to be interacted with in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>disable-physics</td>
+<td>Set to <code>true</code> to disable block physics in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>drop-protection</td>
+<td>Set to <code>true</code> to prevent dropped items from being picked up by non-members of the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>entity-change-block</td>
+<td>Set to <code>true</code> to allow entities to change blocks within the plot, if not covered by other flags.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>explosion</td>
+<td>Set to <code>true</code> to allow explosions inside a plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>fly</td>
+<td>Set to <code>true</code> to enable flight within the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>forcefield</td>
+<td>Set to <code>true</code> to enable member forcefield in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>grass-grow</td>
+<td>Set to <code>false</code> to disable grass to grow within the plot.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>hanging-break</td>
+<td>Set to <code>true</code> to allow guests to break hanging objects in the plot. Applies to the following entity categories: hanging</td>
+<td>False</td>
+</tr>
+<tr>
+<td>hanging-place</td>
+<td>Set to <code>true</code> to allow guests to hang objects in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>hide-info</td>
+<td>Set to <code>true</code> to hide plot information.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>hostile-attack</td>
+<td>Set to <code>true</code> to enable players to attack hostile mobs in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>hostile-interact</td>
+<td>Set to <code>true</code> to allow players to interact with hostile mobs in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>ice-form</td>
+<td>Set to <code>true</code> to allow ice to form in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>ice-melt</td>
+<td>Set to <code>true</code> to allow ice to melt in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>instabreak</td>
+<td>Set to <code>true</code> to allow blocks to be instantaneously broken in survival mode.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>invincible</td>
+<td>Set to <code>true</code> to prevent players from taking damage inside the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>item-drop</td>
+<td>Set to <code>false</code> to prevent items from being dropped inside the plot.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>keep-inventory</td>
+<td>Prevents players from dropping their items when they die inside the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>kelp-grow</td>
+<td>Set to <code>false</code> to disable kelp to grow in the plot.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>leaf-decay</td>
+<td>Set to <code>false</code> to prevent leaves from decaying.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>lectern-read-book</td>
+<td>Prevent players taking books from lecterns.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>misc-break</td>
+<td>Set to <code>true</code> to allow guests to break miscellaneous items. Applies to the following entity categories: armorstands</td>
+<td>False</td>
+</tr>
+<tr>
+<td>misc-place</td>
+<td>Set to <code>true</code> to allow guests to place miscellaneous items.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>misc-interact</td>
+<td>Set to <code>true</code> to allow guests to interact with miscellaneous items. Applies to the following entities</td>
+<td></td>
+</tr>
+<tr>
+<td>mob-break</td>
+<td>Set to <code>true</code> to allow mobs to break blocks within the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>mob-place</td>
+<td>Set to <code>true</code> to allow mobs to place blocks within the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>mycel-grow</td>
+<td>Set to <code>false</code> to disable mycelium to grow in the plot.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>no-worldedit</td>
+<td>Set to <code>true</code> to disable (FastAsync)WorldEdit usage within the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>notify-enter</td>
+<td>Set to <code>true</code> to notify the plot owners when someone enters the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>notify-leave</td>
+<td>Set to <code>true</code> to notify the plot owners when someone leaves the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>player-interact</td>
+<td>Set to <code>true</code> to allow guests to interact with players in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>pve</td>
+<td>Set to <code>true</code> to enable PVE inside the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>pvp</td>
+<td>Set to <code>true</code> to enable PVP inside the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>prevent-creative-copy</td>
+<td>Prevents people from copying item NBT data in the plot unless they’re added as members.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>projectiles</td>
+<td>Prevents guests from shooting projectiles on the plot when set to false.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>redstone</td>
+<td>Set to <code>false</code> to disable redstone in the plot.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>server-plot</td>
+<td>Set to <code>true</code> to turn the plot into a server plot. This is equivalent to setting the server as the plot owner.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>snow-form</td>
+<td>Set to <code>false</code> to disallow snow to form within the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>snow-melt</td>
+<td>Set to <code>true</code> to allow snow to melt within the plot.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>soil-dry</td>
+<td>Set to <code>true</code> to allow soil to dry within the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>tamed-attack</td>
+<td>Set to <code>true</code> to allow guests to attack tamed animals in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>tamed-interact</td>
+<td>Set to <code>true</code> to allow guests to interact with tamed animals in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>untrusted-visit</td>
+<td>Set to <code>false</code> to disallow untrusted players from visiting the plot.</td>
+<td>True</td>
+</tr>
+<tr>
+<td>vehicle-break</td>
+<td>Set to <code>true</code> to allow guests to break vehicles in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>vehicle-place</td>
+<td>Set to <code>true</code> to allow guests to place vehicles in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>vehicle-use</td>
+<td>Set to <code>true</code> to allow guests to use vehicles in the plot. Applies to the following entity categories: vehicle</td>
+<td>False</td>
+</tr>
+<tr>
+<td>villager-interact</td>
+<td>Set to <code>true</code> to allow guests to interact with villagers in the plot.</td>
+<td>False</td>
+</tr>
+<tr>
+<td>vine-grow</td>
+<td>Set to <code>false</code> to disable vines to grow within the plot.</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<h4 id="double">Double</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>price</td>
+<td>If set a plot can be bought for this price using <code>/plot buy</code>. Requires economy to be enabled and lists plots under <code>/plots list forsale</code>.</td>
+<td>Not Buyable</td>
+</tr>
+</tbody>
+</table>
+<h4 id="enum">Enum</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deny-teleport</td>
+<td>Deny a certain group from teleporting to the plot. Available groups: members, nonmembers, trusted, nontrusted, nonowners</td>
+<td>None</td>
+</tr>
+<tr>
+<td>liquid-flow</td>
+<td>Set to <code>false</code> to disable liquid flowing.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>titles</td>
+<td>Set to <code>true</code> to allow the plot title when someone enters the plot.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>weather</td>
+<td>Specifies the simulated weather inside the plot. This hasn’t an effet of weather dependent game mechanics.</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h4 id="integer">Integer</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>animal-cap</td>
+<td>Set to an integer value to limit the amount of animals on the plot. Applies to the following entity categories: animal, villager, tamable</td>
+<td>Infinity</td>
+</tr>
+<tr>
+<td>entity-cap</td>
+<td>Set to an integer value to limit the amount of entities on the plot.</td>
+<td>Infinity</td>
+</tr>
+<tr>
+<td>hostile-cap</td>
+<td>Set to an integer value to limit the amount of hostile entities on the plot. Applies to the following entity categories: hostile</td>
+<td>Infinity</td>
+</tr>
+<tr>
+<td>misc-cap</td>
+<td>Set to an integer value to limit the amount of miscellaneous entities on the plot. Applies to the following entity categories: projectile, other, hanging</td>
+<td>Infinity</td>
+</tr>
+<tr>
+<td>mob-cap</td>
+<td>Set to an integer value to limit the amount of mobs on the plot. Applies to the following entity categories: animal, villager, tamable, hostile</td>
+<td>Infinity</td>
+</tr>
+<tr>
+<td>vehicle-cap</td>
+<td>Set to an integer value to limit the amount of vehicles on the plot. Applies to the following entity categories: vehicle</td>
+<td>Infinity</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Specifies the simulated time inside the plot. This has no effect of time dependent game mechanics.</td>
+<td>Disabled</td>
+</tr>
+</tbody>
+</table>
+<h4 id="internal">Internal</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>analysis</td>
+<td>A multi purpose debug analysis flag.</td>
+<td>Null</td>
+</tr>
+<tr>
+<td>done</td>
+<td>Mark a plot as done.</td>
+<td>Null</td>
+</tr>
+</tbody>
+</table>
+<h4 id="miscellaneous">Miscellaneous</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>blocked-cmds</td>
+<td>A list of commands that are blocked in the plot.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>gamemode</td>
+<td>Determines the gamemode in the plot.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>guest-gamemode</td>
+<td>Determines the guest gamemode in the plot.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>music</td>
+<td>Set to a music disk ID (item name) to play the music disc.</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h4 id="string">String</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>description</td>
+<td>Plot description.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>farewell</td>
+<td>Message sent to players when leaving the plot.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>greeting</td>
+<td>Message sent to players on plot entry.</td>
+<td>None</td>
+</tr>
+<tr>
+<td>plot-title</td>
+<td>Set the pop-up title’s title and subtitle. Format: <code>/plot flag set title "A title" "The subtitle"</code></td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h4 id="timed">Timed</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Default Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>feed</td>
+<td>Specify an interval in seconds and an optional amount by which the players will be fed (amount is 0 by default = vanilla-regeneration).</td>
+<td>None</td>
+</tr>
+<tr>
+<td>heal</td>
+<td>Specify an interval in seconds and an optional amount by which the players will be healed (amount is 0 by default = vanilla-regeneration).</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "content.code.copy", "content.code.select", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+    
+  </body>
+</html>

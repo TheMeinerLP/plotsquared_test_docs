@@ -1,0 +1,1480 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://themeinerlp.github.io/plotsquared_test_docs/commands/">
+      
+      
+        <link rel="prev" href="../bypass-permissions/">
+      
+      
+        <link rel="next" href="../permission-packs/">
+      
+      <link rel="icon" href="../assets/images/icon.svg">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.8">
+    
+    
+      
+        <title>Commands - Plotsquared Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ded33207.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#commands" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Plotsquared Docs" class="md-header__button md-logo" aria-label="Plotsquared Docs" data-md-component="logo">
+      
+  <img src="../assets/images/icon.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Plotsquared Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Commands
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_3" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9h-1.9M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69m-9.15 3.96h2.3L12 9l-1.15 3.65Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_3">
+            
+              <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/TheMeinerLP/plotsquared_test_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheMeinerLP/plotsquared_test_docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Plotsquared Docs" class="md-nav__button md-logo" aria-label="Plotsquared Docs" data-md-component="logo">
+      
+  <img src="../assets/images/icon.svg" alt="logo">
+
+    </a>
+    Plotsquared Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/TheMeinerLP/plotsquared_test_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    TheMeinerLP/plotsquared_test_docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        PlotSquared Documentation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bypass-permissions/" class="md-nav__link">
+        Bypass Permissions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Commands
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Commands
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setowner" class="md-nav__link">
+    SETOWNER
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add" class="md-nav__link">
+    ADD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trust" class="md-nav__link">
+    TRUST
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove" class="md-nav__link">
+    REMOVE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deny" class="md-nav__link">
+    DENY
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grant" class="md-nav__link">
+    GRANT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kick" class="md-nav__link">
+    KICK
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merge" class="md-nav__link">
+    MERGE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unlink" class="md-nav__link">
+    UNLINK
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sethome" class="md-nav__link">
+    SETHOME
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alias" class="md-nav__link">
+    ALIAS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setdescription" class="md-nav__link">
+    SETDESCRIPTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#music" class="md-nav__link">
+    MUSIC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setbiome" class="md-nav__link">
+    SETBIOME
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setflag" class="md-nav__link">
+    SETFLAG
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#done" class="md-nav__link">
+    DONE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    CONTINUE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toggle" class="md-nav__link">
+    TOGGLE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    SET
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy" class="md-nav__link">
+    COPY
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move" class="md-nav__link">
+    MOVE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swap" class="md-nav__link">
+    SWAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup" class="md-nav__link">
+    BACKUP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clear" class="md-nav__link">
+    CLEAR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    DELETE
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../permission-packs/" class="md-nav__link">
+        Permission Packs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../placeholders/" class="md-nav__link">
+        Placeholders
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plot-backups/" class="md-nav__link">
+        Plot Backups
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plot-component-presets/" class="md-nav__link">
+        Plot component presets
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plot-components/" class="md-nav__link">
+        Plot components
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plot-flags/" class="md-nav__link">
+        Plot flags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schematic-generation/" class="md-nav__link">
+        Schematic generation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../single-plot-area/" class="md-nav__link">
+        Single Plot Area
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../why-should-you-switch-to-plotsquared/" class="md-nav__link">
+        Why should you switch to PlotSquared?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+          Api
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_13">
+          <span class="md-nav__icon md-icon"></span>
+          Api
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/api-documentation/" class="md-nav__link">
+        API Documentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/api-flag-documentation/" class="md-nav__link">
+        API Flag Documentation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/event-api/" class="md-nav__link">
+        Event API
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+          Files
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_14">
+          <span class="md-nav__icon md-icon"></span>
+          Files
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/settings.yml/" class="md-nav__link">
+        settings.yml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/storage.yml/" class="md-nav__link">
+        storage.yml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../files/worlds.yml/" class="md-nav__link">
+        worlds.yml
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_15" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_15" id="__nav_15_label" tabindex="0">
+          Setup
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_15_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_15">
+          <span class="md-nav__icon md-icon"></span>
+          Setup
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/migrating-from-an-older-major-release/" class="md-nav__link">
+        Migrating from an older major release
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/updating-from-1.12-to-1.13/" class="md-nav__link">
+        Updating from 1.12 to 1.13
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setowner" class="md-nav__link">
+    SETOWNER
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#add" class="md-nav__link">
+    ADD
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trust" class="md-nav__link">
+    TRUST
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remove" class="md-nav__link">
+    REMOVE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deny" class="md-nav__link">
+    DENY
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grant" class="md-nav__link">
+    GRANT
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kick" class="md-nav__link">
+    KICK
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merge" class="md-nav__link">
+    MERGE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#unlink" class="md-nav__link">
+    UNLINK
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sethome" class="md-nav__link">
+    SETHOME
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alias" class="md-nav__link">
+    ALIAS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setdescription" class="md-nav__link">
+    SETDESCRIPTION
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#music" class="md-nav__link">
+    MUSIC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setbiome" class="md-nav__link">
+    SETBIOME
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setflag" class="md-nav__link">
+    SETFLAG
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#done" class="md-nav__link">
+    DONE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continue" class="md-nav__link">
+    CONTINUE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toggle" class="md-nav__link">
+    TOGGLE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    SET
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy" class="md-nav__link">
+    COPY
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#move" class="md-nav__link">
+    MOVE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swap" class="md-nav__link">
+    SWAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup" class="md-nav__link">
+    BACKUP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clear" class="md-nav__link">
+    CLEAR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    DELETE
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="commands">Commands</h1>
+<h4 id="setowner">SETOWNER</h4>
+<p>Set the plot owner.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] setowner &lt;player&gt;</code></p>
+<p><strong>Aliases:</strong> <code>[ owner, so, seto ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.admin.command.setowner</code></li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Owner.java">here</a></p>
+<h4 id="add">ADD</h4>
+<p>With this command you "add him" to the whitelist of the plot. Allow a user to build in a plot while the plot owner is online.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] add &lt;player | *&gt;</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.add</code> - Access to the command <code>/plot add</code></li>
+<li><code>plots.add.&lt;amount&gt;</code> - Specifying the amount of people the plot owner can add</li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.add</code> - Administrative override</li>
+<li><code>plots.add.everyone</code> - Access to add everyone</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Add.java">here</a></p>
+<h4 id="trust">TRUST</h4>
+<p>Whith this command you "add him" to the whitelist of the plot. It gives the added user more permissions as the normal ADD command: it allow a user to build in a plot every time and use WorldEdit while the plot owner is offline.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] trust &lt;player | *&gt;</code></p>
+<p><strong>Aliases:</strong> <code>[ t ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.trust</code> - Access to the command <code>/plot trust</code></li>
+<li><code>plots.trust.&lt;amount&gt;</code> - Specifying the amount of people the plot owner can trust</li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.trust</code> - Administrative override</li>
+<li><code>plots.trust.everyone</code> - Access to trust everyone</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Trust.java">here</a></p>
+<h4 id="remove">REMOVE</h4>
+<p>Remove a player from a plot. This include the player whitelist (ADD, TRUST) and the blacklist (DENY) of the plot.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] remove &lt;player | *&gt;</code></p>
+<p><strong>Aliases:</strong> <code>[ r, untrust, ut, undeny, ud, unban ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.remove</code> - Access to the command <code>/plot remove</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.remove</code> Administrative override</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Remove.java">here</a></p>
+<h4 id="deny">DENY</h4>
+<p>Deny a user from entering a plot. With this command you "add him" to the blacklist of the plot.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] deny &lt;player | *&gt;</code></p>
+<p><strong>Aliases:</strong> <code>[ d, ban ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.deny</code> - Access to the command <code>/plot deny</code></li>
+<li><code>plots.deny.&lt;amount&gt;</code> - Specifying the amount of people the plot owner can deny</li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.deny</code> - Administrative override</li>
+<li><code>plots.admin.entry.denied</code> - Administrative override to bypass plot deny</li>
+<li><code>plots.deny.everyone</code> - Access to deny everyone</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Deny.java">here</a></p>
+<h4 id="grant">GRANT</h4>
+<p>Manage plot grants.</p>
+<p><strong>Usage:</strong> <code>/plot grant &lt;check | add&gt; [player]</code></p>
+<p><strong>Permissions:</strong></p>
+<ul>
+<li><code>plots.grant</code> - Access to the command <code>/plot grant</code></li>
+<li><code>plots.grant.add</code> - Access to the command <code>/plot grant add</code></li>
+<li><code>plots.grant.check</code> - Access to the command <code>/plot grant check</code></li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Grant.java">here</a></p>
+<h4 id="kick">KICK</h4>
+<p>Kick a player from your plot.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] kick &lt;player | *&gt;</code></p>
+<p><strong>Aliases:</strong> <code>[ k ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.kick</code> - Access to the command <code>/plot kick</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.kick</code> - Administrative override</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Kick.java">here</a></p>
+<h4 id="merge">MERGE</h4>
+<p>Merge the plot you are standing on with another plot.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] merge &lt;all | n | e | s | w&gt; [removeroads]</code></p>
+<p><strong>Aliases:</strong> <code>[ m ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.merge</code> - Access to the command <code>/plot claim</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.merge.&lt;amount&gt;</code> - Limit the amount of plots a player can merge to a mega plot</li>
+<li><code>plots.admin.command.merge</code> - Administrative override</li>
+<li><code>plots.merge.other</code> - Access to merge the plot with other people</li>
+<li><code>plots.merge.keeproad</code> - Access to use the keeproad argument</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Merge.java">here</a></p>
+<h4 id="unlink">UNLINK</h4>
+<p>Unlink a mega-plot (merged plot)</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] unlink [createroads]</code></p>
+<p><strong>Aliases:</strong> <code>[ u, unmerge ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.unlink</code> - Access to the command <code>/plot unlink</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.unlink</code> - Administrative override</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Unlink.java">here</a></p>
+<h4 id="sethome">SETHOME</h4>
+<p>Set the plot-home you’re standing on. The plothome is the position where the player will teleported if he use the <code>/plot home</code> or <code>/plot visit</code> command. With the argument <code>none</code> you reset the position.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] set home [none]</code></p>
+<p><strong>Aliases:</strong> <code>[ sh, seth, sethome ]</code></p>
+<p><strong>Permissions:</strong></p>
+<ul>
+<li><code>plots.set.home</code> - Access to the command <code>/plot set home</code></li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/SetHome.java">here</a></p>
+<h4 id="alias">ALIAS</h4>
+<p>Set the plot name</p>
+<p><strong>Usage:</strong></p>
+<ul>
+<li><code>/plot [[world;]X;Z] alias set &lt;alias&gt;</code></li>
+<li><code>/plot [[world;]X;Z] alias remove &lt;alias&gt;</code></li>
+</ul>
+<p><strong>Aliases:</strong> <code>[ setalias, sa, name, rename, setname, seta, nameplot ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.alias.set</code> - Access to the command <code>/plot alias set</code></li>
+<li><code>plots.alias.remove</code> - Access to the command <code>/plot alias remove</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.alias.set</code> - Administrative override to set an alias</li>
+<li><code>plots.admin.alias.remove</code> - Administrative override to remove an alias</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Alias.java">here</a></p>
+<h4 id="setdescription">SETDESCRIPTION</h4>
+<p>Set the plot description</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] desc &lt;description&gt;</code></p>
+<p><strong>Aliases:</strong> <code>[ setdescription, setdesc, setd, description ]</code></p>
+<p><strong>Permissions:</strong> <code>plots.set.desc</code> - Access to the command <code>/plot set description</code></p>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Desc.java">here</a></p>
+<h4 id="music">MUSIC</h4>
+<p>Player music in a plot</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] music</code></p>
+<p><strong>Permissions:</strong> <code>plots.music</code> - Access to the command <code>/plot music</code></p>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Music.java">here</a></p>
+<h4 id="setbiome">SETBIOME</h4>
+<p>List all possible biomes or change the plot biome. (You can change the biome with WorldEdit / FAWE too.) If you clear or delete the plot, you reset the biom setting too, so the default biome (changeable in the <code>worlds.yml</code>) will be used.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] biome [biome]</code></p>
+<p><strong>Aliases:</strong> <code>[ biome, sb, setb, b ]</code></p>
+<p><strong>Permissions:</strong> <code>plots.set.biome</code> - Access to the command <code>/plot set biome</code></p>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Biome.java">here</a></p>
+<h4 id="setflag">SETFLAG</h4>
+<p>Manage plot flags.</p>
+<p><strong>Usage:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>/plot [[world;]X;Z] flag</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>/plot [[world;]X;Z] flag info &lt;flag&gt;</code></li>
+<li><code>/plot [[world;]X;Z] flag set &lt;flag&gt; &lt;value&gt;</code></li>
+<li><code>/plot [[world;]X;Z] flag add &lt;flag&gt; &lt;values&gt;</code></li>
+<li><code>/plot [[world;]X;Z] flag remove &lt;flag&gt; [values]</code></li>
+</ul>
+<p><strong>Aliases:</strong> <code>[ f, flag ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.flag</code> - Access to the command <code>/plot flag</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.set.flag</code> - Access to the command <code>/plot set flag</code></li>
+<li><code>plots.flag.remove</code> - Access to the command <code>/plot flag remove</code></li>
+<li><code>plots.flag.add</code> - Access to the command <code>/plot flag add</code></li>
+<li><code>plots.set.flag.other</code> - Access to set flag on other people’s plots</li>
+<li><code>plots.set.flag.&lt;arg&gt;</code> - Access to the command <code>/plot set flag &lt;arg&gt;</code></li>
+<li><code>plots.flag.list</code> - Access to the command <code>/plot flag list</code></li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/FlagCommand.java">here</a></p>
+<h4 id="done">DONE</h4>
+<p>Mark a plot as done</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] done</code></p>
+<p><strong>Aliases:</strong> <code>[ submit ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.done</code> - Access to the command <code>/plot done</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.done</code> - Administrative override</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Done.java">here</a></p>
+<h4 id="continue">CONTINUE</h4>
+<p>Continue a plot that was previously marked as done</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] continue</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.continue</code> - Access to the command <code>/plot continue</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.continue</code> - Administrative override</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Continue.java">here</a></p>
+<h4 id="toggle">TOGGLE</h4>
+<p>Toggle per user settings</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] toggle &lt;chat | chatspy | clear-confirmation | time | titles | worldedit&gt;</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.use</code> - Access to the command <code>/plot toggle</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.chat</code> - Access to the command <code>/plot toggle chat-spy</code></li>
+<li><code>plots.worldedit.bypass</code> - Access to the command <code>/plot wea</code></li>
+<li><code>plots.toggle.chat</code> - Access to the command <code>/plot chat</code></li>
+<li><code>plots.admin.command.autoclear</code> - Access to the command <code>/plot toggle clear-confirmation</code></li>
+<li><code>plots.toggle.titles</code> - Access to the command <code>/plot toggle titles</code></li>
+<li><code>plots.toggle.time</code> - Access to the command <code>/plots toggle time</code></li>
+<li><code>plots.toggle.debug</code> - Access to the command <code>/plots toggle debug</code></li>
+<li><code>plots.admin.debug.other</code> - Administrative override to toggle the debugmode for other players</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Toggle.java">here</a></p>
+<h4 id="set">SET</h4>
+<p>Set a plot value</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] set &lt;biome | alias | home | floor | wall | all | air | main | middle | outline | border&gt; &lt;value...&gt;</code></p>
+<p><strong>Aliases:</strong> <code>[ s ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.set</code> - Access to the command <code>/plot set</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.set." + &lt;component&gt;</code></li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Set.java">here</a></p>
+<h4 id="copy">COPY</h4>
+<p>Copy a plot.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] copy &lt;X;Z&gt;</code></p>
+<p><strong>Aliases:</strong> <code>[ copypaste ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.copy</code> - Access to the command <code>/plot copy</code></li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Copy.java">here</a></p>
+<h4 id="move">MOVE</h4>
+<p>Move a plot.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] move &lt;X;Z&gt;</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.move</code> - Access to the command <code>/plot move</code></li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Move.java">here</a></p>
+<h4 id="swap">SWAP</h4>
+<p>Swap two plots.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] swap &lt;X;Z&gt;</code></p>
+<p><strong>Aliases:</strong> <code>[ switch ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.swap</code> - Access to the command <code>/plot swap</code></li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Swap.java">here</a></p>
+<h4 id="backup">BACKUP</h4>
+<p>Manage plot backups</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] backup &lt;save | list | load&gt;</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.backup</code> - Access to the command <code>/plot backup</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.backup.save</code> - Access to the command <code>/plot backup save</code></li>
+<li><code>plots.backup.load</code> - Access to the command <code>/plot backup load</code></li>
+<li><code>plots.backup.list</code> - Access to the command <code>/plot backup list</code></li>
+<li><code>plots.admin.backup.other</code> - Administrative override to manage backups at other plots</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Backup.java">here</a></p>
+<h4 id="clear">CLEAR</h4>
+<p>Clear the plot you stand on. It doesn’t reset any plot settigns or flag (with exception of the biome setting).</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] clear</code></p>
+<p><strong>Aliases:</strong> <code>[ reset ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.clear</code> - Access to the command <code>/plot clear</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.clear</code> - Administrative override</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Clear.java">here</a></p>
+<h4 id="delete">DELETE</h4>
+<p>Delete the plot you stand on.</p>
+<p><strong>Usage:</strong> <code>/plot [[world;]X;Z] delete</code></p>
+<p><strong>Aliases:</strong> <code>[ dispose, del ]</code></p>
+<p><strong>Permissions:</strong></p>
+<p>Primary:</p>
+<ul>
+<li><code>plots.delete</code> - Access to the command <code>/plot delete</code></li>
+</ul>
+<p>Secondary:</p>
+<ul>
+<li><code>plots.admin.command.delete</code> - Administrative override to delete plots.</li>
+</ul>
+<p><strong>Source Code:</strong> <a href="https://github.com/IntellectualSites/PlotSquared/tree/v6/Core/src/main/java/com/plotsquared/core/command/Delete.java">here</a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "content.code.copy", "content.code.select", "search.suggest", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+    
+  </body>
+</html>
