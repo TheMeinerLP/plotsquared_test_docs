@@ -37,7 +37,7 @@ If you don’t need a vanilla world you can set up the default world as a plotwo
 
 1. (Stop your server and) delete the vanilla worlds `world`, `world_nether` and `world_the_end` like selected below:
 
-![img.png](img.png)
+![img.png](../img.png)
 
 1. Then, open the file called `server.properties`; this is located in your server’s root folder. 
 
@@ -91,7 +91,7 @@ Advanced note: PlotSquared does only take two sides of the road into considerati
 
 Here is a link of the parts of a road schematic you have to create. The pink parts are just a recommendation, but the past has shown us that it’s good to add them before creating the road schematic:
 
-![img_1.png](img_1.png)
+![img_1.png](../img_1.png)
 
 Once you have created the road, stand in the plot and execute the following command:
 
