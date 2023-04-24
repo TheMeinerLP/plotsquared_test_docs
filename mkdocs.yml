@@ -1,6 +1,8 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: Plotsquared Docs
 site_url: https://themeinerlp.github.io/plotsquared_test_docs/
+repo_url: https://github.com/TheMeinerLP/plotsquared_test_docs
+repo_name: TheMeinerLP/plotsquared_test_docs
 
 theme:
   name: material
@@ -9,6 +11,9 @@ theme:
   - navigation.sections
   - content.code.copy
   - content.code.select
+  - search.suggest
+  - search.highlight
+  - search.share
   font:
     code: Roboto Mono
   palette:
@@ -21,6 +26,8 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: red
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -28,6 +35,8 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: red
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -49,3 +58,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+
+plugins:
+  - search:
+      lang:
+        - en
