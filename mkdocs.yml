@@ -5,6 +5,8 @@ repo_url: https://github.com/TheMeinerLP/plotsquared_test_docs
 repo_name: TheMeinerLP/plotsquared_test_docs
 
 theme:
+  logo: assets/images/icon.svg
+  favicon: assets/images/icon.svg
   name: material
   locale: en
   features:
